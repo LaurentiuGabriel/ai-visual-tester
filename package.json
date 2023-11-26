@@ -1,0 +1,29 @@
+{
+  "name": "ai-visual-tester",
+  "version": "1.0.0",
+  "description": "A package that is using AI to perform visual test of screenshots of apps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaurentiuGabriel/ai-visual-tester.git"
+  },
+  "keywords": [
+    "ai",
+    "gpt",
+    "visual",
+    "testing",
+    "qa"
+  ],
+  "author": "Laurentiu Raducu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaurentiuGabriel/ai-visual-tester/issues"
+  },
+  "homepage": "https://github.com/LaurentiuGabriel/ai-visual-tester#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
