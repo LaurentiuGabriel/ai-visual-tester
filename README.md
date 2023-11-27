@@ -1,6 +1,6 @@
 # ai-visual-tester
 
-![Node Build](https://github.com/LaurentiuGabriel/ai-visual-tester/actions/workflows/node.js.yml.badge.svg)
+![Node Build](https://github.com/LaurentiuGabriel/ai-visual-tester/actions/workflows/node.js.yml/badge.svg)
 
 ai-visual-tester is an innovative npm package that leverages artificial intelligence to perform visual testing on screenshots of applications. By utilizing OpenAI's powerful models, this package can analyze screenshots for visual inconsistencies, UX issues, typos, and other elements critical to high-quality software development.
 
