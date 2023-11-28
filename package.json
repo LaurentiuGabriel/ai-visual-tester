@@ -1,10 +1,10 @@
 {
   "name": "ai-visual-tester",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package that is using AI to perform visual test of screenshots of apps.",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,9 @@
   "homepage": "https://github.com/LaurentiuGabriel/ai-visual-tester#readme",
   "dependencies": {
     "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-fetch-mock": "^3.0.3"
   }
 }
