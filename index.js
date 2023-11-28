@@ -1,22 +1,19 @@
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+const fs = require('fs').promises;
 
 /**
  * Encodes the provided file into a base64 string.
- * @param {File} file - The file to be encoded.
+ * @param {string} filePath - The path of the file to be encoded.
  * @returns {Promise<string>} A promise that resolves to the base64 encoded string.
  */
-function encodeImage(file) {
+function encodeImage(filePath) {
     return new Promise((resolve, reject) => {
-        const reader = new FileReader();
-
-        reader.onloadend = () => {
-            const base64String = reader.result.replace(/^data:.+;base64,/, '');
-            resolve(base64String);
-        };
-
-        reader.onerror = reject;
-
-        reader.readAsDataURL(file);
+        fs.readFile(filePath)
+            .then(data => {
+                const base64String = data.toString('base64');
+                resolve(base64String);
+            })
+            .catch(error => reject(error));
     });
 }
 
@@ -61,7 +58,7 @@ async function testPhoto(file) {
             headers: headers,
             body: JSON.stringify(payload)
         });
-
+        
         const responseJson = await response.json();
         const messageContent = responseJson.choices[0].message.content;
         return messageContent.split('\n');
