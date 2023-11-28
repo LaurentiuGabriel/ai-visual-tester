@@ -23,12 +23,8 @@ Import the testPhoto function from the package and use it to send a file for ana
 ### Example
 ```
 const { testPhoto } = require('ai-visual-tester');
-const fs = require('fs');
 
-// Read the image file as a buffer
-const fileBuffer = fs.readFileSync('path_to_your_screenshot.jpg');
-
-testPhoto(fileBuffer)
+testPhoto('path_to_your_screenshot.jpg')
   .then(lines => {
     console.log("AI Analysis:");
     lines.forEach(line => console.log(line));
