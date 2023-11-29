@@ -1,6 +1,6 @@
 {
   "name": "ai-visual-tester",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A package that is using AI to perform visual test of screenshots of apps.",
   "main": "index.js",
   "scripts": {

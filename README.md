@@ -32,6 +32,30 @@ testPhoto('path_to_your_screenshot.jpg')
   .catch(error => console.error("Error:", error));
 ```
 
+Using the following file:
+
+![Screenshot](screenshot.png)
+
+The output is the following:
+
+```
+1. Color Contrast and Legibility: The contrast between the text and the background seems to be adequate, ensuring legibility. However, the golden logo at the top may be difficult to see for users with visual impairments due to its thin lines and the dark background.
+
+2. Typography and Hierarchy: The use of typography to denote different levels of information hierarchy (like headings for "Order received", "Order details", etc.) appears clear, aiding in user navigation through the content.
+
+3. Alignment and Layout: There is a noticeable issue with alignment; the text in the main body ("Order details", "Product", "Subtotal", etc.) is not aligned with the header ("Home", "Shop", "Blog", etc.), which can create a disorganized appearance.
+
+4. Consistency: The header options ("Home", "Shop", "Blog", "Contact us") and the user greeting ("Hello, Playwright") are inconsistent in their alignment and positioning, which may confuse users regarding the layout's structure.
+
+5. Spacing and Padding: The elements seem to be evenly spaced, but the top menu items could benefit from more padding to balance them within the navigation bar.
+
+6. Call to Action and User Guidance: There appears to be no clear call to action following the order confirmation. Users may be unsure of what to do next after their order has been received.
+
+7. Information Clarity: The order summary is very clear, with the order number, date, email, total, and payment method neatly presented. However, the repetition of the total amount (Subtotal, Total, and a final Total) could be confusing. It may not be clear why there are three separate lines with the same amount (CHF 0.00).
+
+8. Typos and Language: No typos are evident in the text provided. However, it's important to note that without context, it's not possible to check the accuracy of the email address or other user-specific information.
+```
+
 ## API Reference
 ### testPhoto(file)
 - file (File): The screenshot file to be analyzed.
